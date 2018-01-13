@@ -5,11 +5,17 @@ class jdbhandler(object):
     
     ''' 
     TODO: 
+		Make insert_job method only update last_seen date if job already exists
         Add Company Branches for a better filter
     '''
     def __init__(self, file='db/finder.sqlite'):
         '''
         Initiates a connection to database
+		
+		Parameters
+		----------
+		file : str
+			Location of db file
         '''
         import sqlite3
         import atexit
@@ -56,7 +62,7 @@ class jdbhandler(object):
     def insert_job(self, title, job_id, location_id, dept_id, company_id):
         '''
         Inserts job into Job table
-
+		
         Parameters
         ----------
         title : str
@@ -189,7 +195,7 @@ class jdbhandler(object):
         '''
         self.cur.execute('''
             SELECT 
-                Job.title, Job.id, Location.name, Department.name, Company.name, Company.url
+                Job.title, Job.job_id, Location.name, Department.name, Company.name, Company.url
             FROM 
                 Job JOIN Location JOIN Department JOIN Company
             ON 
@@ -218,7 +224,7 @@ class jdbhandler(object):
         placeholder = ', '.join(qst for e in locations)
         query = '''
             SELECT 
-                Job.title, Job.id, Location.name, Department.name, Company.name, Company.url
+                Job.title, Job.job_id, Location.name, Department.name, Company.name, Company.url
             FROM 
                 Job JOIN Location JOIN Department JOIN Company
             ON 
