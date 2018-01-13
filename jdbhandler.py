@@ -5,8 +5,7 @@ class jdbhandler(object):
     
     ''' 
     TODO: 
-        Handle NoneTypes on Insertion
-        Add Company Branches?
+        Add Company Branches for a better filter
     '''
     def __init__(self, file='db/finder.sqlite'):
         '''
