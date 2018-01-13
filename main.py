@@ -1,5 +1,14 @@
-import json
+## --- EDIT HERE ---
+## To ignore ssl warnings run: python -W ignore main.py
+## Keywords to look for
+keywords = ['Data', 'Data Science', 'Analyst', 'Intern', 
+            'Junior', 'Trainee', 'Sommar', 'Summer']
+			
+## Locations to look for
+locations = ['Gothenburg', 'Stockholm']
 
+## --- CODE BELOW ---
+import json
 def save_companies(company_dict):
     with open('teamtailor.json', 'w') as f:
         json.dump(company_dict, f, indent=2)
@@ -13,13 +22,6 @@ def db_add_companies(dbh, company_dict):
 	for company, url in company_dict.items():
 		dbh.insert_company(company, url)
 	dbh.commit()
-
-## Keywords to look for
-keywords = ['Data', 'Data Science', 'Analyst', 'Intern', 
-            'Junior', 'Trainee', 'Sommar', 'Summer']
-			
-## Locations to look for
-locations = ['Gothenburg', 'Stockholm']
 
 from jdbhandler import jdbhandler
 from jfinder import jfinder
@@ -50,9 +52,10 @@ def print_offer(offer):     # (title, id, loc, dept, company, url)
     print(offer[4] + ':')
     print(offer[0])
     print(offer[3], '-', offer[2])
-    print('Link:', offer[5] + str(offer[1]))
+    print('Link:', offer[5] + '/' + str(offer[1]))
     print('-'*58, '\n')
 
+## Print offers
 offers = dbh.get_offers(locations)    # (title, id, loc, dept, company, url)
 for offer in dbh.get_offers(locations):
     if contains(offer[0], keywords):
