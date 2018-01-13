@@ -2,7 +2,7 @@
 ## To ignore ssl warnings run: python -W ignore main.py
 ## Keywords to look for
 keywords = ['Data', 'Data Science', 'Analyst', 'Intern', 
-            'Junior', 'Trainee', 'Sommar', 'Summer']
+            'Junior', 'Trainee', 'Sommar', 'Summer', 'Student']
 			
 ## Locations to look for
 locations = ['Gothenburg', 'Stockholm']
@@ -52,7 +52,7 @@ def print_offer(offer):     # (title, id, loc, dept, company, url)
     print(offer[4] + ':')
     print(offer[0])
     print(offer[3], '-', offer[2])
-    print('Link:', offer[5] + '/' + str(offer[1]))
+    print('Link:', offer[5] + '/jobs/' + str(offer[1]))
     print('-'*58, '\n')
 
 ## Print offers
