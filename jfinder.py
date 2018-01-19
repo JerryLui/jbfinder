@@ -103,11 +103,6 @@ class jfinder(object):
 			List of locations used for filtering
 		file_name : str
 			Path to file for writing
-			
-		Returns
-		----------
-		bool
-			True if write successful
 		'''
 		# Format locations for html
 		if locations:
