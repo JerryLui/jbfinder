@@ -14,7 +14,7 @@ class jfinder(object):
 		self.service = service
 		
 	### WORKER FUNCTIONS ###
-	def crawl_jobs(self, company, url):
+	def crawl(self, company, url):
 		"""
 		Requests and retrieves job data from company
 		
@@ -55,7 +55,7 @@ class jfinder(object):
 				
 		return result
 		
-	def filter_jobs(self, offers, keywords):
+	def filter_offers(self, offers, keywords=[]):
 		'''
 		Filters through offers by keywords in offer title and dept
 		
@@ -72,7 +72,9 @@ class jfinder(object):
 			A list of offers with relevant title and dept (title, id, loc, dept, company, url), None if no match
 		
 		'''
+		# Return all if no keywords are sepcified
 		if not keywords: return offers
+		
 		
 		def contains(string, keywords):
 			for key in keywords:
@@ -87,7 +89,7 @@ class jfinder(object):
 		
 		return (results if results else None)
 		
-	def jobs_to_html(self, offers, keywords, locations, file_name='jobs.html'):
+	def to_html(self, offers, keywords=[], locations=[], file_name='jobs.html', open_browser=True):
 		'''
 		Writes offers to html file
 		
@@ -135,6 +137,7 @@ class jfinder(object):
 			c_offers = c_offers + offer_templ % (offer[4], offer[5] + '/jobs/' + str(offer[1]), 
 											offer[0], offer[3], offer[2])
 		
+		# HTML Template
 		html_templ = '''<!DOCTYPE html>
 		<html lang="en">
 			<head>
@@ -160,9 +163,13 @@ class jfinder(object):
 		</html>
 		''' % (locations, keywords, c_offers)
 		
+		# Write html to file
 		with open(file_name, 'w+') as f:
 			f.write(html_templ)
 		
-		
+		# Open job file in browser
+		if open_browser:
+			import webbrowser, os
+			webbrowser.open('file://' + os.path.realpath(file_name))
 		
 		
