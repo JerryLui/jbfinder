@@ -9,10 +9,9 @@ In main.py I have written some quick code to update the db and print out offers 
 
 *I do realize that a db isn't really necessary and the code can be written much shorter, but where's the fun in that.*
 
-### TODO:
-- Store soup so that only one request per day is required
-- Save as JSON
+## TODO:
 - Update for concurrent retrieval
+- Add branches to DB for better filtering
 - Expand career dict by crawling through brands and checking for following patterns
     + jobb(a).company.*
     + karriar.company.*
