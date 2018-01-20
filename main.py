@@ -23,6 +23,9 @@ def db_add_companies(dbh, company_dict):
 		dbh.insert_company(company, url)
 	dbh.commit()
 
+## Must run to create db
+# db_add_companies()
+	
 from jdbhandler import jdbhandler
 from jfinder import jfinder
 dbh = jdbhandler()
