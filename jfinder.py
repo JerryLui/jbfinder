@@ -34,7 +34,7 @@ class jfinder(object):
 		from bs4 import BeautifulSoup
 		
 		# Check if data is up to date
-		jobs_req = '/jobs?department_id=&location_id='      # Get all jobs from all locations
+		jobs_req = 'jobs?department_id=&location_id='       # Query all jobs all locations
 		page = requests.get(url + jobs_req, verify = False) # Request all available jobs
 
 		# Find job listings
