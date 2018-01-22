@@ -32,9 +32,11 @@ dbh = jdbhandler()
 finder = jfinder()
 
 ## Crawl for jobs from all companies in Company table and put job into Job table 
+## MAKE RESTARTABLE 
 def db_add_jobs():
 	print('Updating jobs table...')
 	for company in dbh.get_companies():    # [id, name, url]
+		print(company)
 		if not finder.crawl(company[1], company[2]): continue    # Skip if no jobs are found
 		for job in finder.crawl(company[1], company[2]):
 			dept_id = dbh.insert_department(job[2])    # [job_title, job_id, job_dept, job_loc]
@@ -42,13 +44,13 @@ def db_add_jobs():
 			loc_id = dbh.insert_location(job[3])
 			loc_id = (loc_id[0] if loc_id is not None else None)
 			dbh.insert_job(job[0], job[1], loc_id, dept_id, company[0]) # HANDLE NONE
-
+		dbh.commit()
 	dbh.clear_old_jobs()
-	dbh.commit()
+	
 
 
 # Update job data
-db_add_jobs()
+#db_add_jobs()
 
 # Get offers
 offers = finder.filter_offers(dbh.get_offers(locations), keywords)

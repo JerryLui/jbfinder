@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# vim: set fileencoding=UTF8 :
 class jfinder(object):
 	"""
 	Retrieves job offers from companies using Teamtailor as their career page service and 
@@ -41,16 +43,26 @@ class jfinder(object):
 		soup = BeautifulSoup(page.content, 'html.parser')
 		jobs = soup.find('ul', {'class':'jobs'})
 		if not jobs:    # Return None if no jobs available
+			print('No jobs found at', company)
 			return None 
 		jobs = jobs.find_all('li') 
 		
 		result = []
 		for job in jobs:
-			meta = job.find('span', {'class':'meta'}).get_text().title().split(' – ')
-			job_title = job.find('span', {'class':'title'}).get_text().title()
+			job_span = job.find('span', {'class':'title'})
+			if not job_span:
+				print(company + ': Error Parsing Jobs!')
+				return None
+			job_title = job_span.get_text().title()
 			job_id = job.find('a')['href'].split('/')[-1].split('-')[0]
-			job_dept = meta[0]
-			job_loc = (meta[1] if len(meta) > 1 else None)
+			meta_span = job.find('span', {'class':'meta'})
+			if meta_span: # If No Meta
+				meta = meta_span.get_text().title().split(' – ')
+				job_dept = meta[0]
+				job_loc = (meta[1] if len(meta) > 1 else None)
+			else:
+				job_dept = None
+				job_loc = None
 			result.append([job_title, job_id, job_dept, job_loc])
 				
 		return result
@@ -132,6 +144,8 @@ class jfinder(object):
 			c_offers = c_offers + offer_templ % (offer[4], offer[5] + '/jobs/' + str(offer[1]), 
 											offer[0], offer[3], offer[2])
 		
+		import time
+		today = time.strftime('%d/%m/%y')
 		# HTML Template
 		html_templ = '''<!DOCTYPE html>
 		<html lang="en">
@@ -140,7 +154,9 @@ class jfinder(object):
 			</head>
 			<body>
 				<div class="containter col-md-4">
-					<h3>Job offers</h3>
+					<h2>Job offers
+					<small class="text-muted">(%s)</small>
+					</h2>
 					<p>Locations: %s</p>
 					<p>Keywords: %s</p>
 					<table class="table table-striped">
@@ -156,15 +172,15 @@ class jfinder(object):
 				</div>
 			</body>
 		</html>
-		''' % (locations, keywords, c_offers)
-		
+		''' % (today, locations, keywords, c_offers)
+
+		import codecs # Handling codec errors during regular write
 		# Write html to file
-		with open(file_name, 'w+') as f:
+		with codecs.open(file_name, 'w+', 'utf-8-sig') as f:
 			f.write(html_templ)
-		
+
 		# Open job file in browser
 		if open_browser:
 			import webbrowser, os
 			webbrowser.open('file://' + os.path.realpath(file_name))
-		
-		
+

@@ -11,16 +11,14 @@ In main.py I have written some quick code to update the db and print out offers 
 
 ## TODO:
 - Update for concurrent retrieval
-- Add branches to DB for better filtering
-- Expand career dict by crawling through brands and checking for following patterns
-    + jobb(a).company.*
-    + karriar.company.*
-    + job(s).company.*
-    + career(s).company.*
-    + company.teamtailor.*
-    
+- Add industry branches to DB for better filtering
+- Clean Location Table, and improve insert_location method in jfinder
+- Improve insert_job method in jdbhandler to only update entry last_seen instead of creating new (DB)
+- Futher expand Company table.
     ex. Google "site:karriar.* teamtailor"
-- Create engine for Jobvite https://www.jobvite.com/
-- Create engine for 50skills https://www.50skills.com/
-- Create engine for workable https://www.workable.com/
-- Create engine for northzone http://www.ventureloop.com/northzone/
+
+- Create crawler for REKRY
+- Create crawler for Jobvite https://www.jobvite.com/
+- Create crawler for 50skills https://www.50skills.com/
+- Create crawler for workable https://www.workable.com/
+- Create crawler for northzone http://www.ventureloop.com/northzone/

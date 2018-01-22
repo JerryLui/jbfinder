@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# vim: set fileencoding=UTF8 :
+
 class jdbhandler(object):
     '''
     Overlay for handling data communications
@@ -98,7 +101,7 @@ class jdbhandler(object):
             The id number of given company
         '''
         self.cur.execute('''INSERT OR IGNORE INTO Company (name, url) VALUES (?, ?)''',
-                   (company.title(), url))
+                   (company, url))
         self.cur.execute('''SELECT id FROM Company WHERE name = ?''', (company,))
         return self.cur.fetchone()
 
@@ -195,7 +198,7 @@ class jdbhandler(object):
         '''
         self.cur.execute('''
             SELECT 
-                Job.title, Job.job_id, Location.name, Department.name, Company.name, Company.url
+                Job.title, Job.job_id, Location.name, Department.name, Company.name, Company.url, Job.last_seen
             FROM 
                 Job JOIN Location JOIN Department JOIN Company
             ON 
@@ -224,7 +227,7 @@ class jdbhandler(object):
         placeholder = ', '.join(qst for e in locations)
         query = '''
             SELECT 
-                Job.title, Job.job_id, Location.name, Department.name, Company.name, Company.url
+                Job.title, Job.job_id, Location.name, Department.name, Company.name, Company.url, Job.last_seen
             FROM 
                 Job JOIN Location JOIN Department JOIN Company
             ON 
