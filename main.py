@@ -50,7 +50,7 @@ def db_add_jobs():
 
 
 # Update job data
-#db_add_jobs()
+db_add_jobs()
 
 # Get offers
 offers = finder.filter_offers(dbh.get_offers(locations), keywords)
