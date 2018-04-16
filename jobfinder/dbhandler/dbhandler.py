@@ -1,16 +1,17 @@
 #!/usr/bin/python
 # vim: set fileencoding=UTF8 :
 
-class dbhandler(object):
+
+class DBHandler(object):
 	"""
-	API for handling database
+	Internal API for database handling
 
 	TODO:
 		Make insert_job method only update last_seen date if job already exists
 		Add Company Branches for a better filter
 	"""
 
-	def __init__(self, file='db/finder.sqlite'):
+	def __init__(self, file='dbhandler/db/finder.sqlite'):
 		"""
 		Initiates a connection to database
 
@@ -26,21 +27,9 @@ class dbhandler(object):
 		self.cur = self.conn.cursor()
 
 		# Translate cities into English
-		self.loc_dict = {'Göteborg': 'Gothenburg',
+		self.loc_dict = {'Gothenburg': 'Göteborg',
 						 'København': 'Copenhagen',
-						 'Lund': 'Lund'}
-
-	def get_cursor(self):
-		"""
-		Returns connection cursor
-		"""
-		return self.cur
-
-	def get_locdict(self):
-		"""
-		Returns location dictionary
-		"""
-		return self.loc_dict
+						 'Warszawa': 'Warsaw'}
 
 	def commit(self):
 		"""
@@ -73,7 +62,7 @@ class dbhandler(object):
 		"""
 		self.cur.execute("""INSERT OR REPLACE INTO Job (title, job_id, location_id, dept_id, company_id) 
 							VALUES (?, ?, ?, ?, ?)""",
-							(title, job_id, location_id, dept_id, company_id))
+			(title, job_id, location_id, dept_id, company_id))
 
 	def insert_company(self, company, url):
 		"""
