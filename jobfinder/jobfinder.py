@@ -1,4 +1,4 @@
-from .dbhandler import *
+from dbhandler import *
 
 # --- EDIT HERE ---
 # To ignore ssl warnings run: python -W ignore jobfinder.py
@@ -8,10 +8,11 @@ keywords = ['Data', 'Data Science', 'Analyst', 'Intern',
 
 locations = []
 
-# --- CODE HERE ---
-dbh = DBHandler()
-dbh.add_companies(dbh.load_companies())
+if __name__ == '__main__':
+    # --- CODE HERE ---
+    dbh = DBHandler()
+    dbh.add_companies(dbh.load_companies())
 
-# Get offers
-offers = filter_offers(Database.get_offers(locations), keywords)
-generate_html(offers, keywords, locations)
+    # Get offers
+    offers = filter_offers(Database.get_offers(locations), keywords)
+    generate_html(offers, keywords, locations)

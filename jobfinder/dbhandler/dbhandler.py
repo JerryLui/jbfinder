@@ -25,17 +25,24 @@ class DBHandler(object):
             File path to db file.
         """
         self.db = Database(db_file)
+        self.path = os.path.dirname(os.path.abspath(__file__))
 
-        def close():
-            self.db.close()
+        atexit.register(self.close)
 
-        atexit.register(close())
+    def close(self):
+        self.db.close()
 
-    def save_companies(self, company_dict, output='collections/teamtailor.json'):
-        with open(output, 'w') as f:
+    def save_companies(self, company_dict, file_name=''):
+        if not file_name:
+            file_name = os.path.join(self.path, 'collectors', 'data', 'teamtailor.json')
+
+        with open(file_name, 'w') as f:
             json.dump(company_dict, f, indent=2)
 
-    def load_companies(self, file_name='collections/teamtailor.json'):
+    def load_companies(self, file_name=''):
+        if not file_name:
+            file_name = os.path.join(self.path, 'collectors', 'data', 'teamtailor.json')
+
         with open(file_name, 'r') as f:
             return json.load(f)
 
@@ -91,7 +98,7 @@ class Database(object):
         """
         # Get relative path to db file if no file specified.
         if file:
-            file = os.path.join(os.path.dirname(os.path.abspath(self.__file__)), 'db', 'db.sqlite')
+            file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'db', 'db.sqlite')
 
         self.file = file
         self.conn = sqlite3.connect(self.file)

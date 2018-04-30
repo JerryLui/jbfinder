@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d96882-108b-4372-820f-f492fe64504c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/jbfinder.iml" afterPath="$PROJECT_DIR$/.idea/jbfinder.iml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/__init__.py" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/__init__.py" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/collectors/company.py" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/collectors/company.py" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/db/finder.sqlite" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/db/db.sqlite" />
       <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/populate_cities.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/finder/__init__.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/finder/finder.py" afterPath="" />
       <change beforePath="$PROJECT_DIR$/jobfinder/jobfinder.py" afterPath="$PROJECT_DIR$/jobfinder/jobfinder.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,24 +49,24 @@
           <file leaf-file-name="dbhandler.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="269" column="25" lean-forward="false" selection-start-line="269" selection-start-column="25" selection-end-line="269" selection-end-column="25" />
+                <state relative-caret-position="306">
+                  <caret line="36" column="69" lean-forward="false" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
                   <folding>
                     <element signature="e#51#65#0" expanded="true" />
-                    <marker date="1525099895303" expanded="true" signature="3669:3776" ph="INSERT OR RE... Job" />
-                    <marker date="1525099895303" expanded="true" signature="4219:4274" ph="INSERT OR IG... Company" />
-                    <marker date="1525099895303" expanded="true" signature="4348:4385" ph="SELECT id FR... Company" />
-                    <marker date="1525099895303" expanded="true" signature="5015:5063" ph="INSERT OR IG... Location" />
-                    <marker date="1525099895303" expanded="true" signature="5109:5147" ph="SELECT id FR... Location" />
-                    <marker date="1525099895303" expanded="true" signature="5640:5690" ph="INSERT OR IG... Department" />
-                    <marker date="1525099895303" expanded="true" signature="5738:5778" ph="SELECT id FR... Department" />
-                    <marker date="1525099895303" expanded="true" signature="6159:6180" ph="SELECT * FRO... Company" />
-                    <marker date="1525099895303" expanded="true" signature="6455:6477" ph="SELECT * FRO... Location" />
-                    <marker date="1525099895303" expanded="true" signature="6758:6781" ph="SELECT * FRO... Departmen" />
-                    <marker date="1525099895303" expanded="true" signature="6758:6782" ph="SELECT * FRO... Department" />
-                    <marker date="1525099895303" expanded="true" signature="7121:7539" ph="SELECT Job.t... Job" />
-                    <marker date="1525099895303" expanded="true" signature="8121:8595" ph="SELECT Job.t... Job" />
-                    <marker date="1525099895303" expanded="true" signature="8869:8917" ph="DELETE FROM Job... " />
+                    <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
+                    <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
+                    <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
+                    <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
+                    <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
+                    <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
+                    <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
+                    <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
+                    <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
+                    <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
+                    <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
+                    <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
+                    <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
+                    <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
                   </folding>
                 </state>
               </provider>
@@ -84,11 +76,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="netcrawler.py" pinned="false" current-in-tab="false">
+          <file leaf-file-name="netcrawler.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1666">
-                  <caret line="98" column="68" lean-forward="false" selection-start-line="98" selection-start-column="68" selection-end-line="98" selection-end-column="68" />
+                <state relative-caret-position="561">
+                  <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -106,11 +98,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="jobfinder.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="jobfinder.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+                <state relative-caret-position="0">
+                  <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -161,10 +153,10 @@
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/finder.py" />
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/populate_cities.py" />
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py" />
-        <option value="$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py" />
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/__init__.py" />
-        <option value="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" />
+        <option value="$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py" />
         <option value="$PROJECT_DIR$/jobfinder/jobfinder.py" />
+        <option value="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" />
       </list>
     </option>
   </component>
@@ -231,7 +223,15 @@
               <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
               <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
               <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jbfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="collectors" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -295,14 +295,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3576087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27991217" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27934784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -338,20 +337,20 @@
           <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
           <folding>
             <element signature="e#51#65#0" expanded="true" />
-            <marker date="1525099895303" expanded="true" signature="3669:3776" ph="INSERT OR RE... Job" />
-            <marker date="1525099895303" expanded="true" signature="4219:4274" ph="INSERT OR IG... Company" />
-            <marker date="1525099895303" expanded="true" signature="4348:4385" ph="SELECT id FR... Company" />
-            <marker date="1525099895303" expanded="true" signature="5015:5063" ph="INSERT OR IG... Location" />
-            <marker date="1525099895303" expanded="true" signature="5109:5147" ph="SELECT id FR... Location" />
-            <marker date="1525099895303" expanded="true" signature="5640:5690" ph="INSERT OR IG... Department" />
-            <marker date="1525099895303" expanded="true" signature="5738:5778" ph="SELECT id FR... Department" />
-            <marker date="1525099895303" expanded="true" signature="6159:6180" ph="SELECT * FRO... Company" />
-            <marker date="1525099895303" expanded="true" signature="6455:6477" ph="SELECT * FRO... Location" />
-            <marker date="1525099895303" expanded="true" signature="6758:6781" ph="SELECT * FRO... Departmen" />
-            <marker date="1525099895303" expanded="true" signature="6758:6782" ph="SELECT * FRO... Department" />
-            <marker date="1525099895303" expanded="true" signature="7121:7539" ph="SELECT Job.t... Job" />
-            <marker date="1525099895303" expanded="true" signature="8121:8595" ph="SELECT Job.t... Job" />
-            <marker date="1525099895303" expanded="true" signature="8869:8917" ph="DELETE FROM Job... " />
+            <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
+            <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
+            <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
+            <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
+            <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
+            <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
+            <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
+            <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
+            <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
+            <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
+            <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
+            <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
+            <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
+            <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
           </folding>
         </state>
       </provider>
@@ -403,20 +402,20 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#51#65#0" expanded="true" />
-            <marker date="1525099895303" expanded="true" signature="3669:3776" ph="INSERT OR RE... Job" />
-            <marker date="1525099895303" expanded="true" signature="4219:4274" ph="INSERT OR IG... Company" />
-            <marker date="1525099895303" expanded="true" signature="4348:4385" ph="SELECT id FR... Company" />
-            <marker date="1525099895303" expanded="true" signature="5015:5063" ph="INSERT OR IG... Location" />
-            <marker date="1525099895303" expanded="true" signature="5109:5147" ph="SELECT id FR... Location" />
-            <marker date="1525099895303" expanded="true" signature="5640:5690" ph="INSERT OR IG... Department" />
-            <marker date="1525099895303" expanded="true" signature="5738:5778" ph="SELECT id FR... Department" />
-            <marker date="1525099895303" expanded="true" signature="6159:6180" ph="SELECT * FRO... Company" />
-            <marker date="1525099895303" expanded="true" signature="6455:6477" ph="SELECT * FRO... Location" />
-            <marker date="1525099895303" expanded="true" signature="6758:6781" ph="SELECT * FRO... Departmen" />
-            <marker date="1525099895303" expanded="true" signature="6758:6782" ph="SELECT * FRO... Department" />
-            <marker date="1525099895303" expanded="true" signature="7121:7539" ph="SELECT Job.t... Job" />
-            <marker date="1525099895303" expanded="true" signature="8121:8595" ph="SELECT Job.t... Job" />
-            <marker date="1525099895303" expanded="true" signature="8869:8917" ph="DELETE FROM Job... " />
+            <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
+            <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
+            <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
+            <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
+            <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
+            <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
+            <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
+            <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
+            <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
+            <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
+            <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
+            <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
+            <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
+            <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
           </folding>
         </state>
       </provider>
@@ -487,24 +486,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1666">
-          <caret line="98" column="68" lean-forward="false" selection-start-line="98" selection-start-column="68" selection-end-line="98" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -517,32 +498,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" lean-forward="false" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state relative-caret-position="0">
+          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="269" column="25" lean-forward="false" selection-start-line="269" selection-start-column="25" selection-end-line="269" selection-end-column="25" />
+        <state relative-caret-position="306">
+          <caret line="36" column="69" lean-forward="false" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
           <folding>
             <element signature="e#51#65#0" expanded="true" />
-            <marker date="1525099895303" expanded="true" signature="3669:3776" ph="INSERT OR RE... Job" />
-            <marker date="1525099895303" expanded="true" signature="4219:4274" ph="INSERT OR IG... Company" />
-            <marker date="1525099895303" expanded="true" signature="4348:4385" ph="SELECT id FR... Company" />
-            <marker date="1525099895303" expanded="true" signature="5015:5063" ph="INSERT OR IG... Location" />
-            <marker date="1525099895303" expanded="true" signature="5109:5147" ph="SELECT id FR... Location" />
-            <marker date="1525099895303" expanded="true" signature="5640:5690" ph="INSERT OR IG... Department" />
-            <marker date="1525099895303" expanded="true" signature="5738:5778" ph="SELECT id FR... Department" />
-            <marker date="1525099895303" expanded="true" signature="6159:6180" ph="SELECT * FRO... Company" />
-            <marker date="1525099895303" expanded="true" signature="6455:6477" ph="SELECT * FRO... Location" />
-            <marker date="1525099895303" expanded="true" signature="6758:6781" ph="SELECT * FRO... Departmen" />
-            <marker date="1525099895303" expanded="true" signature="6758:6782" ph="SELECT * FRO... Department" />
-            <marker date="1525099895303" expanded="true" signature="7121:7539" ph="SELECT Job.t... Job" />
-            <marker date="1525099895303" expanded="true" signature="8121:8595" ph="SELECT Job.t... Job" />
-            <marker date="1525099895303" expanded="true" signature="8869:8917" ph="DELETE FROM Job... " />
+            <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
+            <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
+            <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
+            <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
+            <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
+            <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
+            <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
+            <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
+            <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
+            <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
+            <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
+            <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
+            <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
+            <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
           </folding>
         </state>
       </provider>
