@@ -19,5 +19,5 @@ if __name__ == '__main__':
     dbh.update_jobs(company_of_interest)
 
     # Get offers
-    offers = filter_offers(DatabaseAPI.get_jobs(locations=locations), keywords)
+    offers = filter_offers(db.get_jobs(locations), keywords)
     generate_html(offers, keywords, locations)
