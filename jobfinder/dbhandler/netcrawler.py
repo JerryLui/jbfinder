@@ -58,7 +58,7 @@ def crawl(company, url):
     return result
 
 
-def filter_offers(offers, args=[]):
+def filter_offers(offers, *args):
     """
     Filters through offers by keywords in offer title and dept
 
@@ -80,7 +80,7 @@ def filter_offers(offers, args=[]):
 
     def contains(string, keywords):
         for key in keywords:
-            if key in string:
+            if key.lower() in string.lower():
                 return True
         return False
 
@@ -92,7 +92,7 @@ def filter_offers(offers, args=[]):
     return results if results else None
 
 
-def generate_html(offers, keywords=[], locations=[], file_name='jobs.html', open_browser=True):
+def generate_html(offers, keywords=None, locations=None, file_name='jobs.html', open_browser=True):
     """
     Writes offers to html file
 
@@ -110,16 +110,10 @@ def generate_html(offers, keywords=[], locations=[], file_name='jobs.html', open
         Path to file for writing
     """
     # Format locations for html
-    if locations:
-        locations = str.join(', ', locations)
-    else:
-        locations = 'All'
+    locations = str.join(', ', locations) if locations else 'All'
 
     # Format keywords for html
-    if keywords:
-        keywords = str.join(', ', keywords)
-    else:
-        keywords = 'None'
+    keywords = str.join(', ', keywords) if keywords else 'None'
 
     # Format offer for html
     offer_templ = """<tr>

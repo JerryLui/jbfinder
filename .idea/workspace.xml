@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6d96882-108b-4372-820f-f492fe64504c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/jbfinder.iml" afterPath="$PROJECT_DIR$/.idea/jbfinder.iml" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" />
-      <change beforePath="$PROJECT_DIR$/jobfinder/jobfinder.py" afterPath="$PROJECT_DIR$/jobfinder/jobfinder.py" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/db/db.sqlite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jobfinder/jobfinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/jobfinder/jobfinder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,31 +44,36 @@
     </expand>
     <select />
   </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="netcrawler.py" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="669">
+                    <caret line="85" selection-start-line="85" selection-end-line="85" />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
+  </component>
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.502994">
       <split-first>
-        <leaf>
-          <file leaf-file-name="dbhandler.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="dbhelper.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="36" column="69" lean-forward="false" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+                <state relative-caret-position="595">
+                  <caret line="277" column="28" selection-start-line="277" selection-start-column="28" selection-end-line="277" selection-end-column="28" />
                   <folding>
                     <element signature="e#51#65#0" expanded="true" />
-                    <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
-                    <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
-                    <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
-                    <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
-                    <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
-                    <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
-                    <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
-                    <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
-                    <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
-                    <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
-                    <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
-                    <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
-                    <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
-                    <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
                   </folding>
                 </state>
               </provider>
@@ -75,47 +82,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="netcrawler.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="citiesdict.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jobfinder.py" pinned="false" current-in-tab="false">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="jobfinder.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/__init__.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="51">
-                  <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
-                  <folding>
-                    <element signature="e#0#24#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="374">
+                  <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
                 </state>
               </provider>
             </entry>
@@ -154,9 +126,10 @@
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/populate_cities.py" />
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py" />
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/__init__.py" />
+        <option value="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" />
         <option value="$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py" />
         <option value="$PROJECT_DIR$/jobfinder/jobfinder.py" />
-        <option value="$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py" />
+        <option value="$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py" />
       </list>
     </option>
   </component>
@@ -186,17 +159,7 @@
     </entry>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -204,40 +167,36 @@
         <subPane>
           <expand>
             <path>
-              <item name="jbfinder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="jbfinder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfinder" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jbfinder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfinder" type="b2602c69:ProjectViewProjectNode" />
               <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
-              <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jbfinder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
               <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
               <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="jbfinder" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jbfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="jobfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
               <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
               <item name="dbhandler" type="462c0819:PsiDirectoryNode" />
-              <item name="collectors" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="jobfinder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="jobfinder" type="462c0819:PsiDirectoryNode" />
+              <item name="output" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -268,9 +227,6 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration>C:\Users\jerry\AppData\Roaming\Subversion</configuration>
   </component>
@@ -295,27 +251,28 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934782" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3576087" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27934784" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1098081" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10958904" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32861805" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297062" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.38846573" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.27856365" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,29 +285,58 @@
     <breakpoint-manager>
       <option name="time" value="1" />
     </breakpoint-manager>
-    <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py">
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="23" lean-forward="false" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        <state relative-caret-position="612">
+          <caret line="36" column="69" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
           <folding>
             <element signature="e#51#65#0" expanded="true" />
-            <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
-            <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
-            <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
-            <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
-            <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
-            <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
-            <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
-            <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
-            <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
-            <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
-            <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
-            <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
-            <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
-            <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -358,14 +344,14 @@
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/SCB_excel_to_json.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
-          <caret line="11" column="36" lean-forward="false" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
+          <caret line="11" column="36" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -375,121 +361,14 @@
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3043">
-          <caret line="179" column="7" lean-forward="false" selection-start-line="179" selection-start-column="7" selection-end-line="179" selection-end-column="7" />
-          <folding />
+          <caret line="179" column="7" selection-start-line="179" selection-start-column="7" selection-end-line="179" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" lean-forward="true" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="48" column="12" lean-forward="false" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#51#65#0" expanded="true" />
-            <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
-            <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
-            <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
-            <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
-            <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
-            <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
-            <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
-            <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
-            <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
-            <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
-            <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
-            <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
-            <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
-            <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/data/teamtailor.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1527">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/SCB_excel_to_json.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/data/swedish_cities.json" />
-    <entry file="file://$PROJECT_DIR$/jobfinder/finder/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/city.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/company.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6ba79b39-79c9-4937-9bb2-a0b58b1071d5/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/__main__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/test.py" />
-    <entry file="file://$PROJECT_DIR$/job_finder/dbhandler/dbhandler.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="239" column="34" lean-forward="false" selection-start-line="239" selection-start-column="34" selection-end-line="239" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="34" lean-forward="false" selection-start-line="3" selection-start-column="34" selection-end-line="3" selection-end-column="34" />
+        <state>
+          <caret column="22" lean-forward="true" selection-start-column="22" selection-end-column="22" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -498,16 +377,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="782">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#51#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/data/teamtailor.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1527" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/SCB_excel_to_json.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/data/swedish_cities.json" />
+    <entry file="file://$PROJECT_DIR$/jobfinder/finder/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/city.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/collectors/company.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6ba79b39-79c9-4937-9bb2-a0b58b1071d5/console.sql" />
+    <entry file="file://$PROJECT_DIR$/jobfinder/__main__.py" />
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/test.py" />
+    <entry file="file://$PROJECT_DIR$/job_finder/dbhandler/dbhandler.py" />
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/citiesdict.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="51" lean-forward="false" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
+          <caret line="4" column="51" selection-start-line="4" selection-start-column="51" selection-end-line="4" selection-end-column="51" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
@@ -516,33 +448,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/netcrawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="60" column="32" lean-forward="false" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="669">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhandler.py">
+    <entry file="file://$PROJECT_DIR$/jobfinder/dbhandler/dbhelper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="69" lean-forward="false" selection-start-line="36" selection-start-column="69" selection-end-line="36" selection-end-column="69" />
+        <state relative-caret-position="595">
+          <caret line="277" column="28" selection-start-line="277" selection-start-column="28" selection-end-line="277" selection-end-column="28" />
           <folding>
             <element signature="e#51#65#0" expanded="true" />
-            <marker date="1525101104194" expanded="true" signature="3915:4022" ph="INSERT OR RE... Job" />
-            <marker date="1525101104194" expanded="true" signature="4465:4520" ph="INSERT OR IG... Company" />
-            <marker date="1525101104194" expanded="true" signature="4594:4631" ph="SELECT id FR... Company" />
-            <marker date="1525101104194" expanded="true" signature="5261:5309" ph="INSERT OR IG... Location" />
-            <marker date="1525101104194" expanded="true" signature="5355:5393" ph="SELECT id FR... Location" />
-            <marker date="1525101104194" expanded="true" signature="5886:5936" ph="INSERT OR IG... Department" />
-            <marker date="1525101104194" expanded="true" signature="5984:6024" ph="SELECT id FR... Department" />
-            <marker date="1525101104194" expanded="true" signature="6405:6426" ph="SELECT * FRO... Company" />
-            <marker date="1525101104194" expanded="true" signature="6701:6723" ph="SELECT * FRO... Location" />
-            <marker date="1525101104194" expanded="true" signature="7004:7027" ph="SELECT * FRO... Departmen" />
-            <marker date="1525101104194" expanded="true" signature="7004:7028" ph="SELECT * FRO... Department" />
-            <marker date="1525101104194" expanded="true" signature="7367:7785" ph="SELECT Job.t... Job" />
-            <marker date="1525101104194" expanded="true" signature="8367:8841" ph="SELECT Job.t... Job" />
-            <marker date="1525101104194" expanded="true" signature="9115:9163" ph="DELETE FROM Job... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jobfinder/jobfinder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
         </state>
       </provider>
     </entry>

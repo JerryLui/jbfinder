@@ -1,7 +1,5 @@
 #!/usr/bin/python
 # vim: set fileencoding=UTF8 :
-
-
 import sqlite3
 import os
 import json
@@ -10,7 +8,7 @@ import atexit
 from .netcrawler import crawl
 
 
-class DBHandler(object):
+class DBHelper(object):
     """
     Higher level helper functions for Database handling.
     """
@@ -24,7 +22,7 @@ class DBHandler(object):
         db_file : str
             File path to db file.
         """
-        self.db = Database(db_file)
+        self.db = DatabaseAPI(db_file)
         self.path = os.path.dirname(os.path.abspath(__file__))
 
         atexit.register(self.close)
@@ -54,7 +52,7 @@ class DBHandler(object):
             self.db.insert_company(company, url)
         self.db.commit()
 
-    def update_jobs(self, clear_old=True):
+    def update_jobs(self, company_filter, clear_old=True):
         """
         Updates job list with departments and locations.
 
@@ -65,7 +63,10 @@ class DBHandler(object):
 
         """
         print('Updating companies...')
-        for company in self.db.get_companies():  # [id, name, url]
+        companies = self.db.get_companies()
+        companies = list(filter(lambda x: x[1].lower() in map(str.lower, company_filter), companies))
+
+        for company in companies:  # [id, name, url]
             print(company)
             if not crawl(company[1], company[2]):
                 continue  # Skip if no jobs are found
@@ -79,7 +80,7 @@ class DBHandler(object):
             self.db.clear_old_jobs()
 
 
-class Database(object):
+class DatabaseAPI(object):
     """
     Internal API for database handling
 
@@ -87,7 +88,7 @@ class Database(object):
     TODO: Add Company Branches for a better filter
     """
 
-    def __init__(self, file=''):
+    def __init__(self, file=None):
         """
         Initiates a connection to database
 
@@ -97,7 +98,7 @@ class Database(object):
             Location of db file
         """
         # Get relative path to db file if no file specified.
-        if file:
+        if not file:
             file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'db', 'db.sqlite')
 
         self.file = file
@@ -139,7 +140,7 @@ class Database(object):
             id number of company in Company table
         """
         self.cur.execute("""INSERT OR REPLACE INTO Job (title, job_id, location_id, dept_id, company_id) 
-							VALUES (?, ?, ?, ?, ?)""", (title, job_id, location_id, dept_id, company_id))
+                            VALUES (?, ?, ?, ?, ?)""", (title, job_id, location_id, dept_id, company_id))
 
     def insert_company(self, company, url):
         """
@@ -158,7 +159,7 @@ class Database(object):
             The id number of given company
         """
         self.cur.execute("""INSERT OR IGNORE INTO Company (name, url) VALUES (?, ?)""",
-                         (company, url))
+                (company, url))
         self.cur.execute("""SELECT id FROM Company WHERE name = ?""", (company,))
 
         comp = self.cur.fetchone()
@@ -274,17 +275,16 @@ class Database(object):
         """)
         return self.cur.fetchall()
 
-    def get_offers(self, locations=[]):
+    def get_jobs(self, locations=None):
         """
         Gets a list of all jobs at location in locations.
         Since python SQLite3 doesn't have FTS3 keyword filtering has to be done in Python.
 
         Returns
         --------
-        list
-            A list of tuples containing jobs formatted as (title, id, loc, dept, company, url)
+        list with locations
         """
-        if len(locations) < 1:
+        if not locations:
             return self.get_all_jobs()
 
         qst = '?'
@@ -311,8 +311,8 @@ class Database(object):
         """
         Deletes jobs older than 7 days
         """
-        dlim = '-7 day'
-        self.cur.execute("""DELETE FROM Job WHERE last_seen < DATE('now', ?)""", (dlim,))
+        limit = '-7 day'
+        self.cur.execute("""DELETE FROM Job WHERE last_seen < DATE('now', ?)""", (limit,))
 
     def create_db(self):
         """
@@ -338,7 +338,7 @@ class Database(object):
             location_id INTEGER
         );
 
-        CREATE UNIQUE INDEX unq_job ON Job (title, job_id, company_id)
+        CREATE UNIQUE INDEX unq_job ON Job (title, job_id, company_id);
 
         CREATE TABLE IF NOT EXISTS Company (
             id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,

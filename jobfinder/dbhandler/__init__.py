@@ -1,4 +1,4 @@
-from .dbhandler import *
+from .dbhelper import *
 from .netcrawler import *
 
-__all__ = ['DBHandler', 'Database', 'filter_offers', 'crawl', 'generate_html']
+__all__ = ['DBHelper', 'DatabaseAPI', 'filter_offers', 'crawl', 'generate_html']
